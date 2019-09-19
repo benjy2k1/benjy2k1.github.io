@@ -1,0 +1,115 @@
+root {
+  --walktime: 40s;
+}
+
+header h1 {
+  color: blue;
+  text-align: center;
+}
+
+main {
+  height: 70vh;
+}
+
+header {
+  height: 10vh;
+}
+
+footer {
+  height: 10vh;
+}
+
+#verden {
+  height: 70vh;
+}
+
+#himmel {
+  position: relative;
+  height: 80%;
+  background-color: blue;
+}
+#jord {
+  position: relative;
+  height: 20%;
+  background-color: burlywood;
+}
+
+#person {
+  position: absolute;
+  opacity: 1.0;
+  left: 60px;
+  bottom: 40px;
+  height: 112px;
+  width: 112px;
+  background-image: url("puppet.png");
+  background-position-x: 0;
+  background-position-y: calc(-112px * 2);
+  animation: walk 1.4s steps(8) infinite, slide 40s linear forwards;
+}
+
+@keyframes walk {
+  100% {
+    background-position-x: calc(-112px * 8);
+  }
+}
+
+@keyframes slide {
+  0% { left 60px; opacity: 1;}
+  99.9% { left: 70vw; opacity: 1;}
+  100% { left: 70vw; opacity: 0;}
+}
+
+#sol {
+  position: absolute;
+  top: 80px;
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 50%;
+  animation: flimmer 2s infinite alternate;
+}
+
+@keyframes flimmer {
+  100% {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+#kaktus {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  right: 100px;
+  bottom: 30px;
+  background-image: url("cactus.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#skeleton {
+  position: absolute;
+  opacity: 1;
+  width: 120px;
+  height: 120px;
+  right: 300px;
+  bottom: 50px;
+  background-image: url("skeleton_PNG42669.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform-origin: bottom;
+  transform: rotate(90deg);
+  animation: popup 40s linear;
+}
+
+@keyframes popup {
+  0% {opacity: 0;
+  }
+  99% {opacity: 0;
+  }
+  100% {opacity: 1;
+  }
+}

@@ -1,0 +1,33 @@
+#brett {
+  width: 500px;
+  height: 500px;
+  border: solid black 1px;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
+
+#fuggel {
+  width: 100px;
+  height: 100px;
+  border: solid white 1px;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  background-image: url(DVD_audio_logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: fly 5s infinite linear;
+}
+@keyframes fly {
+  0% {
+    left: 5px;
+    top: 5px;
+  }
+
+  50% {
+    left: 400px;
+    top: 400px;
+  }
+}

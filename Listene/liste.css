@@ -1,0 +1,20 @@
+ol {
+  list-style-type: bengali;
+  color: green;
+}
+
+li {
+  color: blue;
+}
+
+ol {
+  list-style: lower-latin;
+}
+
+#land {
+  background-color: firebrick;
+}
+
+#land > li {
+  color: white;
+}
