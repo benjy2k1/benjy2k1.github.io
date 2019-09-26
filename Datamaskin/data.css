@@ -1,0 +1,21 @@
+article {
+  background-color: antiquewhite;
+}
+
+article h1 {
+  color: green;
+}
+
+article > h1 {
+  color: blue;
+}
+
+#intel {
+  width: 300px;
+  height: 180px;
+}
+
+#arm {
+  width: 420px;
+  height: 250px;
+}
