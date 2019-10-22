@@ -1,0 +1,148 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: none;
+  position: absolute;
+  left: 4%;
+  border: none;
+  word-spacing: -0.3em;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: rgb(5, 5, 5);
+  text-align: center;
+  padding: 40px;
+  text-decoration: none;
+  background-color: rgb(248, 238, 226);
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+li a:hover a:visited,
+li a:hover a,
+li a:hover {
+  color: rgb(236, 124, 171);
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-duration: 0.37s;
+  transition-property: color;
+}
+
+body {
+  background: rgb(248, 238, 226);
+}
+
+h1 {
+  font-family: blond;
+  font-weight: bold;
+  color: rgb(236, 124, 171);
+  text-align: center;
+}
+
+@font-face {
+  src: url(Fonts/Blonde.ttf);
+  font-family: blond;
+}
+
+@font-face {
+  src: url(Fonts/OpenSans-Bold.ttf);
+  font-family: open;
+}
+
+#bilder {
+  height: 650px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.bilde {
+  background-size: cover;
+  background-position: center;
+  min-height: 435px;
+  background-repeat: no-repeat;
+  filter: grayscale(40%);
+  flex: 1;
+  transition: 2s;
+}
+
+.bilde:hover {
+  filter: grayscale(0%);
+  flex: 5;
+  min-height: 500px;
+  background-size: contain;
+}
+
+div.bilde:nth-child(1) {
+  background-image: url("indexbilder/tyler.webp");
+}
+
+div.bilde:nth-child(2) {
+  background-image: url("indexbilder/tyler.jpg");
+}
+
+div.bilde:nth-child(3) {
+  background-image: url("indexbilder/frank.jpg");
+}
+
+div.bilde:nth-child(4) {
+  background-image: url("indexbilder/frank2.jpg");
+}
+
+hr {
+  border-top: 1px solid rgb(236, 124, 171);
+  width: 1275px;
+  border-width: 2px;
+}
+
+h2 {
+  font-family: open;
+  text-align: center;
+  font-weight: 500;
+}
+
+td,
+th,
+table {
+  padding: 22px 56px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 960px;
+  border-collapse: collapse;
+  position: initial;
+  margin-bottom: 50px;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(247, 229, 207);
+}
+
+th {
+  background-color: rgb(236, 124, 171);
+}
+
+#liste {
+  text-align: -webkit-match-parent;
+  list-style-type: disc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
