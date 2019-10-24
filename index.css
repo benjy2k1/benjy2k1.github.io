@@ -1,12 +1,16 @@
+:root {
+  --bredde: 89%;
+}
+
 ul {
   list-style-type: none;
-  margin: 0 auto;
+  margin-left: calc((100% - var(--bredde)) / 2);
   overflow: hidden;
   position: absolute;
-  border: none;
+  top: 10%;
   word-spacing: -0.3em;
-  width: 1600px;
-  display: inline-block;
+  width: var(--bredde);
+  border: solid 1px rgb(248, 238, 226);
 }
 
 li {
@@ -14,11 +18,11 @@ li {
 }
 
 li a {
+  width: ;
   display: block;
-  list-style-type: none;
   color: rgb(5, 5, 5);
   text-align: center;
-  padding: 40px;
+  padding: 42px;
   text-decoration: none;
   background-color: rgb(248, 238, 226);
   font-family: Arial;
@@ -90,7 +94,7 @@ h1 {
 }
 
 div.bilde:nth-child(1) {
-  background-image: url("indexbilder/tyler.webp");
+  background-image: url("indexbilder/tyler3.jpg");
 }
 
 div.bilde:nth-child(2) {
@@ -102,7 +106,7 @@ div.bilde:nth-child(3) {
 }
 
 div.bilde:nth-child(4) {
-  background-image: url("indexbilder/frank2.jpg");
+  background-image: url("indexbilder/frank4.png");
 }
 
 hr {
@@ -126,6 +130,7 @@ table {
   border-collapse: collapse;
   position: initial;
   margin-bottom: 50px;
+  color: black;
 }
 
 th,
@@ -138,11 +143,25 @@ tbody tr:nth-child(odd) {
 }
 
 th {
-  background-color: rgb(236, 124, 171);
+  background-color: rgb(241, 127, 175);
+}
+
+td a {
+  color: black;
+}
+
+td a:hover a:visited,
+td a:hover a,
+td a:hover {
+  color: rgb(236, 124, 171);
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-duration: 0.37s;
+  transition-property: color;
 }
 
 #liste {
   text-align: -webkit-match-parent;
-  list-style-type: disc;
+  list-style-type: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
