@@ -23,15 +23,16 @@ header {
   background-color: rgb(194, 230, 233);
 }
 
-#meny li:hover {
-  background-color: darkorchid;
-  transition: 1s;
+#meny h1:hover {
+  background-color: grey;
+  transition: 0.7s;
 }
 
-#meny li:hover a:visited,
-#meny li:hover a,
-#meny li a:hover {
-  color: aliceblue;
+#meny h1:hover a:visited,
+#meny h1:hover a,
+#meny h1 a:hover {
+  color: green;
+  transition: 0.7s;
 }
 
 article {

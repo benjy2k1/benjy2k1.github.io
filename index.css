@@ -69,6 +69,16 @@ h1 {
   font-family: open;
 }
 
+@font-face {
+  src: url(Fonts/RobotoCondensed-Light.ttf);
+  font-family: robotol;
+}
+
+@font-face {
+  src: url(Fonts/RobotoCondensed-Regular.ttf);
+  font-family: robotor;
+}
+
 #bilder {
   height: 650px;
   display: flex;
@@ -81,7 +91,7 @@ h1 {
   background-position: center;
   min-height: 435px;
   background-repeat: no-repeat;
-  filter: grayscale(35%);
+  filter: grayscale(30%);
   flex: 1;
   transition: 2s;
 }

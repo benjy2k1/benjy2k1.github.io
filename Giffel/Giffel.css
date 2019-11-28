@@ -44,7 +44,7 @@ footer {
   background-image: url("puppet.png");
   background-position-x: 0;
   background-position-y: calc(-112px * 2);
-  animation: walk 1.4s steps(8) infinite, slide 40s linear forwards;
+  animation: shrink 1.4s steps(8) infinite, slide 40s linear forwards;
 }
 
 @keyframes walk {
