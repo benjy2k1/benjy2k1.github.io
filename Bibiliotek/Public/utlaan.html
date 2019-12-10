@@ -16,10 +16,11 @@
 
 <body>
     <home-bar heading="Skolebibliotek Skeisvang" crumb="utlån">
-        <li data-link="forfatter">Registrer forfatter</li>
-        <li data-link="bok">Registrer bok</li>
-        <li data-link="laaner">Registrer låner</li>
-        <li data-link="utlaan">Registrer utlån</li>
+            <li data-link="forfatter">Registrer forfatter</li>
+            <li data-link="bok">Registrer bok</li>
+            <li data-link="laaner">Registrer låner</li>
+            <li data-link="utlaan">Registrer utlån</li>
+            <li data-link="eksemplar">Registrer eksemplar</li>
     </home-bar>
 
     <div id="main">
@@ -38,7 +39,7 @@
         <!-- angi feltnavn du ønsker å bruke i fields=""  -->
         <db-insert id="form" 
                 fields="innlevert"
-                foreign="laaner.laanerid:fornavn" 
+                foreign="laaner.laanerid:fornavn+etternavn" 
                 table="utlaan">
             <span slot="heading">Registrer Utlån</span>
             <db-foreign label="tittel" foreign="eksemplarid" 
